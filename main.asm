@@ -1,17 +1,17 @@
 .text
   main:
     li $v0, 11
-    la $a0, 71  # G
+    la $a0, 71        # G
     syscall
-    li $a0, 101 # e
+    addi $a0, $a0, 30 # e (101)
     syscall
-    li $a0, 114 # r
+    addi $a0, $a0, 13 # r (114)
     syscall
-    li $a0, 97  # a
+    sub $a0, $a0, 17 # a (97)
     syscall
-    li $a0, 108 # l
+    addi $a0, $a0, 11 # l (108)
     syscall
-    li $a0, 100 # d
+    sub $a0, $a0, 8  # d (100)
     syscall
     li $v0, 10
     syscall
